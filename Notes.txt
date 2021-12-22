@@ -1,0 +1,4 @@
+Rust files end with extension '.rs'
+You must install the rust runtime, it does not run natively
+To compile a ruse file use "rustc file.rs", which will create an executable
+
