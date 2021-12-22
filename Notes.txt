@@ -1,4 +1,16 @@
 Rust files end with extension '.rs'
 You must install the rust runtime, it does not run natively
-To compile a ruse file use "rustc file.rs", which will create an executable
+To compile a rust file use "rustc file.rs", which will create an executable
+
+Starting a project:
+Use the cargo package manager
+"cargo init"
+This will create a cargo.toml file which has all the dependencies and config
+
+Running a project:
+Execute "cargo run", which will compile and run the code in src
+The compiled files will be located in a target folder, which should be git ignored
+
+
+
 
