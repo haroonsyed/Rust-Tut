@@ -11,6 +11,20 @@ Running a project:
 Execute "cargo run", which will compile and run the code in src
 The compiled files will be located in a target folder, which should be git ignored
 
+Compiling for production:
+Execute "cargo build --release". This will include optimizations.
+The release folder in target will contain the executable.
+
+FUNCTIONS:
+Create a function with "pub fn name(){}"
+First import said file in another file with "mod filename;"
+Call said function with "filename::func()"
+
+STRING/PRINT:
+"{}" is a placeholder for a variable or non-string type or arg name.
+println!("My age is {}",20);
+Putting an index in "{}" indicates which argument to use.
+println!("My name is {1} my age is{0}",20,"Haroon");
 
 
 
