@@ -31,7 +31,7 @@ defined with "let age = 20"
 Variables are block scoped and IMMUTABLE by default
 to make mutable define as "let mut age = 20"
 To define a constant (inlined), the type must also be specified "const ID:i32 =52"
-
+Typecasting simply requires the "as" keyword
 
 
 
