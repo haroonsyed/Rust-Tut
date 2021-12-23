@@ -26,12 +26,17 @@ println!("My age is {}",20);
 Putting an index in "{}" indicates which argument to use.
 println!("My name is {1} my age is{0}",20,"Haroon");
 
+Two types of strings, the immutable primitive one and the dynamic String one
+Making a dynamic string: "let myString = String::from("hello");
+
 VARIABLES:
 defined with "let age = 20"
 Variables are block scoped and IMMUTABLE by default
 to make mutable define as "let mut age = 20"
 To define a constant (inlined), the type must also be specified "const ID:i32 =52"
 Typecasting simply requires the "as" keyword
+
+ARRAYS:
 
 
 
