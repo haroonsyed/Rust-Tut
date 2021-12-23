@@ -7,4 +7,18 @@ pub fn run() {
     let name = "Haroon";
     println!("My name is {}", name);
 
+    //Defining a mutable variable
+    let mut color = "Red";
+    println!("Favorite color {}",color);
+    color = "Green";
+    println!("Favorite color {}",color);
+    
+    //Defining constants
+    const ID:i32 = 52;
+    println!("Constant printed {}",ID);
+
+    //Multivariable assignment
+    let (name2,age2) = ("Syed",20);
+
+
 }
