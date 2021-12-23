@@ -1,5 +1,5 @@
 Rust files end with extension '.rs'
-You must install the rust runtime, it does not run natively
+You must install rust, it does not run natively
 To compile a rust file use "rustc file.rs", which will create an executable
 
 Starting a project:
@@ -29,6 +29,8 @@ println!("My name is {1} my age is{0}",20,"Haroon");
 Two types of strings, the immutable primitive one and the dynamic String one
 Making a dynamic string: "let myString = String::from("hello");
 
+RUST DEREFERENCES POINTERS WHEN PRINTING
+
 VARIABLES:
 defined with "let age = 20"
 Variables are block scoped and IMMUTABLE by default
@@ -37,7 +39,21 @@ To define a constant (inlined), the type must also be specified "const ID:i32 =5
 Typecasting simply requires the "as" keyword
 
 ARRAYS:
+Fixed size and uniform type
+Indexing works the same as most languages "arr[index]"
+The array values is not mutable unless array is defined as mutable 
+    (does not apply to ref only).
 
 
+VECTORS:
+Basically a resizable uniform list.
+You can push or pop items from it.
+Syntax: let mut numbers:Vec<i32> = vec![1];
 
+LOOPING throuh iterable: 
+for x in numbers.iter() {
+    //do something, Don't forget to dereference the pointer
+}
+
+use iter_mut() to be able to mutate the values. 
 
