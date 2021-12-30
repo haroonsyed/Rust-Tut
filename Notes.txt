@@ -38,6 +38,8 @@ to make mutable define as "let mut age = 20"
 To define a constant (inlined), the type must also be specified "const ID:i32 =52"
 Typecasting simply requires the "as" keyword
 
+There is no inc or dec in RUST (i.e x++)
+
 ARRAYS:
 Fixed size and uniform type
 Indexing works the same as most languages "arr[index]"
@@ -57,3 +59,17 @@ for x in numbers.iter() {
 
 use iter_mut() to be able to mutate the values. 
 
+CONDITIONALS:
+Pretty much how c works. However there is no ternary operator.
+
+LOOPS:
+infinite has no condition
+See loops.rs for syntax of other loop types
+
+
+Functions:
+Everything is pass by value. But strings and objects have the
+memory location copied, so they still hold a reference to original value.
+Primitives work as both.
+
+Return type is indicated by an arrow following the paramter list
