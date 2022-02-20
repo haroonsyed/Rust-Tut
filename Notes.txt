@@ -91,3 +91,8 @@ a memory ownership perspective)
 STRUCTS:
 Basically how in C all members are public and it is a class. NOT Primitives
 Remember that in order to change values a resource must be declared as mutable.
+Struct Tuple can be declared if you have a small resource that doesn't need semantics
+
+TUPLES:
+Essentially like python you can bundle multiple values together
+To index between them you can do obj.0, obj.1, obj.2 etc 

@@ -14,3 +14,6 @@ struct Color {
   green: u8,
   blue: u8
 }
+
+// A tuple version would be as follows
+// Struct Color(u8,u8,u8); indexing on this would be c.0, c.1, c.2
