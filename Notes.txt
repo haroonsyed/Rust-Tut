@@ -67,9 +67,27 @@ infinite has no condition
 See loops.rs for syntax of other loop types
 
 
-Functions:
+FUNCTIONS:
 Everything is pass by value. But strings and objects have the
 memory location copied, so they still hold a reference to original value.
 Primitives work as both.
 
 Return type is indicated by an arrow following the paramter list
+
+You can use variables to call a function
+YOu can also have anonymous functions with closures (using pipe syntax)
+
+POINTERS:
+Like in c they point to a resource in memory (usually on heap)
+A non-primitive variable loses reference to object when not using & on reassignment
+
+The list of primitives are below:
+bool, char, numeric_types, arrays, slices, tuples, functions
+(it is kinda strange how arr,func etc are here, but it makes sense when looking at things from
+a memory ownership perspective)
+
+& must be placed on owner variable until released
+
+STRUCTS:
+Basically how in C all members are public and it is a class. NOT Primitives
+Remember that in order to change values a resource must be declared as mutable.
