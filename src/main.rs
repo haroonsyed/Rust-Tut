@@ -1,5 +1,6 @@
 mod arrays;
 mod conditionals;
+mod enums;
 mod functions;
 mod loops;
 mod pointers;
@@ -14,12 +15,13 @@ fn main() {
   // print::run();
   // vars::run();
   // types::run();
-  //strings::run();
-  //arrays::run();
+  // strings::run();
+  // arrays::run();
   // vectors::run();
   // conditionals::run();
   // loops::run();
   // functions::run();
   // pointers::run();
-  structs::run();
+  // structs::run();
+  // enums::run();
 }

@@ -17,4 +17,7 @@ pub fn run() {
 
   //What's especially useful is using placeholder for debugging
   println!("{:?}", (12, true, "hello"));
+
+  //And even better is this for debugging:
+  dbg!(12, true, "hello");
 }

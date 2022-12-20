@@ -11,5 +11,21 @@ pub fn run() {
   */
   //Explicit typing and casting
   let big_num: i64 = (std::i32::MAX as i64) + 1;
-  println!("Bignum value: {}", big_num);
+  println!("big_num value: {}", big_num);
+
+  // To get the size in bytes of a type use the following (analgous to sizeof c++)
+  println!(
+    "Size of big_num in bytes: {}",
+    std::mem::size_of_val(&big_num)
+  );
+
+  // All types in comment above match except tuples, arrays and objects.
+  // Tuple declaration (Say this is first, last, favorite number)
+  let person: (&str, &str, i32) = ("Haroon", "Syed", 11);
+  println!(
+    "Tuple data:\nFirst: {} Last: {} Favorite Number: {}",
+    person.0, person.1, person.2
+  )
+
+  // Arrays and objects have their own examples
 }

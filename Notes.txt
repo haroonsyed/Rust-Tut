@@ -62,6 +62,18 @@ use iter_mut() to be able to mutate the values.
 CONDITIONALS:
 Pretty much how c works. However there is no ternary operator.
 
+Case Statement:
+Use match
+match variable_name {
+
+    CASE_1_VAL => {
+        //Do stuff
+    }
+
+    etc..
+
+}
+
 LOOPS:
 infinite has no condition
 See loops.rs for syntax of other loop types
@@ -76,6 +88,7 @@ Return type is indicated by an arrow following the paramter list
 
 You can use variables to call a function
 YOu can also have anonymous functions with closures (using pipe syntax)
+Closure can refernece outer scope.
 
 POINTERS:
 Like in c they point to a resource in memory (usually on heap)
@@ -93,6 +106,14 @@ Basically how in C all members are public and it is a class. NOT Primitives
 Remember that in order to change values a resource must be declared as mutable.
 Struct Tuple can be declared if you have a small resource that doesn't need semantics
 
+The functions for a struct are defined separately in an `impl` block. 
+This lends itself well to composition of functionality. Especially with Traits.
+
 TUPLES:
 Essentially like python you can bundle multiple values together
-To index between them you can do obj.0, obj.1, obj.2 etc 
+To index between them you can do tuple.0, tuple.1, tuple.2 (numerical not named) etc 
+
+ENUMS:
+Pretty standard. Defined with enum NAME { list enums here }
+
+
