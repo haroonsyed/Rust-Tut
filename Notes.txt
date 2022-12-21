@@ -40,6 +40,19 @@ Typecasting simply requires the "as" keyword
 
 There is no inc or dec in RUST (i.e x++)
 
+TYPES:
+//Primitive types
+Intergers: u8,i8,u16,i16,u32,i32,u64,i64,u128,i128
+Floats: f32,f64
+bool
+char
+Tuples
+Arrays
+Objects
+
+To cast use the "as" keyword with the type
+To cast string to int use parse with error handling.
+
 ARRAYS:
 Fixed size and uniform type
 Indexing works the same as most languages "arr[index]"

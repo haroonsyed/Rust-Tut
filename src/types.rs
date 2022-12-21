@@ -25,7 +25,12 @@ pub fn run() {
   println!(
     "Tuple data:\nFirst: {} Last: {} Favorite Number: {}",
     person.0, person.1, person.2
-  )
+  );
 
   // Arrays and objects have their own examples
+
+  // Casting string to int
+  let str: String = "21".to_string();
+  let num: i32 = str.parse().expect("Could not cast str to an i32");
+  dbg!(str, num);
 }

@@ -1,7 +1,9 @@
 mod arrays;
+mod cli;
 mod conditionals;
 mod enums;
 mod functions;
+mod input;
 mod loops;
 mod pointers;
 mod print;
@@ -24,4 +26,6 @@ fn main() {
   // pointers::run();
   // structs::run();
   // enums::run();
+  // cli::run();
+  input::run();
 }
