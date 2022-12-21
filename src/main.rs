@@ -3,12 +3,15 @@ mod cli;
 mod conditionals;
 mod enums;
 mod functions;
+mod generics;
+mod hashmaps;
 mod input;
 mod loops;
 mod pointers;
 mod print;
 mod strings;
 mod structs;
+mod traits;
 mod types;
 mod vars;
 mod vectors;
@@ -27,5 +30,8 @@ fn main() {
   // structs::run();
   // enums::run();
   // cli::run();
-  input::run();
+  // input::run();
+  // generics::run();
+  // hashmaps::run();
+  traits::run();
 }

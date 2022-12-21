@@ -129,4 +129,24 @@ To index between them you can do tuple.0, tuple.1, tuple.2 (numerical not named)
 ENUMS:
 Pretty standard. Defined with enum NAME { list enums here }
 
+USING:
+Using a namespace is standard practice.
+This is because it does not work the same as c++ causing conflicts and also namespace in rust are longer.
+
+HashMaps:
+Fairly standard, need to 
+use std::collections::HashMap;
+To declare a hashmap is the following:
+let mut map: HashMap<&str, i32> = HashMap::new();
+To iterate is the following:
+for (k, v) in map.iter() {
+    println!("Key {}, value {}", k, v);
+}
+
+Traits:
+Similar to interface.
+Allows structs to implement custom versions of a function through common name and parameter types.
+Lends itself well to composition over inheritance.
+
+
 
